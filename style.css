@@ -19,6 +19,7 @@ body {
     border-radius: 8px; /* optional: soften corners */
     object-fit: contain;
     display: block;
+    margin: 0 auto 24px auto; 
 }
 
 .name {
