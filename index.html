@@ -6,292 +6,282 @@
     <meta name="description" content="Elshaddai Muchuwa – Researcher" />
     <title>Elshaddai Muchuwa</title>
 
+    <!-- GOOGLE FONTS (Swapnil style) -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600" rel="stylesheet">
+
     <!-- Bootstrap + Theme -->
     <link href="styles.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+    <style>
+        /* --- FONT OVERRIDES --- */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Saira Extra Condensed', sans-serif !important;
+            font-weight: 700;
+            letter-spacing: .5px;
+        }
+
+        body, p, li, a, span, div {
+            font-family: 'Muli', sans-serif !important;
+            font-weight: 300;
+            color: #333;
+        }
+
+        /* --- SECTION SPACING LIKE SWAPNIL --- */
+        section.resume-section {
+            padding-top: 3rem !important;
+            padding-bottom: 3rem !important;
+        }
+
+        @media (min-width: 992px) {
+            section.resume-section {
+                padding-top: 4rem !important;
+                padding-bottom: 4rem !important;
+                padding-left: 3rem;
+                padding-right: 3rem;
+            }
+        }
+
+        /* Fix profile image */
+        #sideNav .navbar-brand .img-profile {
+            max-width: 10rem;
+            max-height: 10rem;
+            border: 0.5rem solid rgba(255, 255, 255, 0.2);
+        }
+
+        .pub-resources a {
+            margin-right: 1rem;
+            font-size: 0.9rem;
+        }
+
+        ul.pub-list {
+            padding-left: 1rem;
+        }
+    </style>
 </head>
 
 <body id="page-top">
 
-    <!-- Sidebar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">
-            <span class="d-none d-lg-block">
-                <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
-                     src="assets/headshot.jpeg" alt="Elshaddai Muchuwa">
-            </span>
-            <span class="d-block d-lg-none">Elshaddai Muchuwa</span>
-        </a>
+<!-- SIDEBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <span class="d-none d-lg-block">
+            <img class="img-fluid img-profile rounded-circle mx-auto mb-2"
+                 src="assets/headshot.jpeg" alt="Elshaddai Muchuwa">
+        </span>
+        <span class="d-block d-lg-none">Elshaddai Muchuwa</span>
+    </a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
-                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarResponsive" aria-controls="navbarResponsive"
+            aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav">
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#news">News</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+            <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#service">Service</a></li>
+            <li class="nav-item"><a class="nav-link" href="assets/Elshaddai-Muchuwa-CV.pdf" target="_blank">CV</a></li>
+        </ul>
+    </div>
 
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#research">Research</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#news">News</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#service">Service</a></li>
+    <div class="social-icons mt-4">
+        <a class="social-icon" href="https://github.com/Elmuchuwa" target="_blank"><i class="fab fa-github"></i></a>
+        <a class="social-icon" href="https://www.linkedin.com/in/emuchuwa/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a class="social-icon" href="mailto:elshiermuchuwa@gmail.com"><i class="fas fa-envelope"></i></a>
+    </div>
+</nav>
 
-                <!-- CV BUTTON -->
-                <li class="nav-item">
-                    <a class="nav-link" href="assets/Elshaddai-Muchuwa-CV.pdf" target="_blank">CV</a>
-                </li>
+<!-- MAIN CONTENT -->
+<div class="container-fluid p-0">
 
-            </ul>
+<!-- ABOUT -->
+<section class="resume-section" id="about">
+    <div class="resume-section-content">
+        <h1 class="mb-0">Elshaddai <span class="text-primary">Muchuwa</span></h1>
+
+        <div class="subheading mb-3" style="font-size:1.05rem; color:#555;">
+            Computational Cognitive Science & Government · Franklin & Marshall College<br>
+            <a href="https://fandm-cares.github.io/" target="_blank">Researcher, CARES Lab</a>
         </div>
 
-        <!-- Social Icons Footer -->
-        <div class="social-icons mt-4">
-            <a class="social-icon" href="https://github.com/Elmuchuwa" target="_blank">
-                <i class="fab fa-github"></i></a>
-            <a class="social-icon" href="https://www.linkedin.com/in/emuchuwa/" target="_blank">
-                <i class="fab fa-linkedin"></i></a>
-            <a class="social-icon" href="mailto:elshiermuchuwa@gmail.com">
-                <i class="fas fa-envelope"></i></a>
-        </div>
-    </nav>
+        <p class="lead mb-4">
+            I study how technical systems encode meaning, misrepresent people, and distribute harm.
+            My work brings together AI governance, algorithmic fairness, contextual modeling, and
+            Ubuntu-informed approaches to accountability and design.
+        </p>
 
-
-
-    <!-- MAIN CONTENT -->
-    <div class="container-fluid p-0">
-
-        <!-- ABOUT -->
-        <section class="resume-section" id="about">
-            <div class="resume-section-content">
-                <h1 class="mb-0">Elshaddai <span class="text-primary">Muchuwa</span></h1>
-
-                <div class="subheading mb-3" style="font-size:1.05rem; color:#555;">
-                    Computational Cognitive Science & Government · Franklin & Marshall College<br>
-                    <a href="https://fandm-cares.github.io/" target="_blank">
-                        Researcher, CARES Lab
-                    </a>
-                </div>
-
-                <p class="lead mb-5">
-                    I study how technical systems encode meaning, misrepresent people, and distribute harm.
-                    My work brings together AI governance, algorithmic fairness, contextual modeling, and
-                    Ubuntu-informed approaches to accountability and design.
-                    I take an Afrocentric relational approach grounded in:
-                    <br><br>
-                    <strong>1. Centering marginalized communities</strong> in system modeling and redesign.<br>
-                    <strong>2. Structural analysis</strong>—treating context as part of the model, not noise to be removed.<br>
-                    <strong>3. Community agency</strong>—co-created knowledge, participatory methods, and relational accountability.
-                </p>
-            </div>
-        </section>
-        <hr class="m-0" />
-
-    <!-- RESEARCH -->
-<section class="resume-section" id="research">
-  <div class="resume-section-content">
-    <h2 class="mb-5">Research</h2>
-
-    <p>
-      My research examines how AI clusters, ranks, and interprets people, and how relational,
-      Ubuntu-informed approaches can reshape governance and design. I focus on algorithmic
-      fairness, harm modeling, contextual inference, HRI, and participatory ethics in
-      computational systems.
-    </p>
-
-    <ul style="margin-top: 2rem;">
-
-      <li class="mb-4">
-        <strong>Undergraduate Honors Thesis — Composite Vulnerability Persona (CVP)</strong><br>
-        Modeling relational harm in high-stakes automation using PCA, mixed-effects regression,
-        counterfactual analysis, and stress-profile simulation within an Ubuntu-informed governance framework.
-      </li>
-
-      <li class="mb-4">
-        <strong>Machine Ethics Research — CARES Lab (F&M)</strong><br>
-        Lead analyst for ACM publication; ran PCA, mixed-effects models, and survey validation across
-        nine affective–participatory and perception-based cognitive indicators to evaluate shifts in
-        ethical reasoning.
-      </li>
-
-      <li class="mb-4">
-        <strong>Cognitive Neuroscience of Consciousness — VR & Memory</strong><br>
-        Designed immersive recall study; built behavioral tasks; analyzed responses using Azure
-        sentiment analysis and Python-based feature extraction pipelines.
-      </li>
-
-      <li class="mb-4">
-        <strong>Human–Robot Interaction (Misty)</strong><br>
-        Programmed affective robot behaviors using MistyPy (Python); implemented touch-event detection,
-        LED and pose states; developed a prototype sentiment dashboard (JavaScript + Flask + Supabase).
-      </li>
-
-      <li class="mb-4">
-        <strong>Social Psychology Research — AI & Admissions</strong><br>
-        Built between-subjects experiment testing effects of AI-generated admissions recommendations
-        on decision-making; constructed Qualtrics instruments and ran independent-samples tests,
-        regression, correlational analysis, and assumption checks.
-      </li>
-
-    </ul>
-
-  </div>
+        <p class="lead mb-5">
+            <strong>1. Centering marginalized communities</strong> in system modeling and redesign.<br>
+            <strong>2. Structural analysis</strong> — treating context as part of the model, not noise to be removed.<br>
+            <strong>3. Community agency</strong> — co-created knowledge, participatory methods, and relational accountability.
+        </p>
+    </div>
 </section>
 <hr class="m-0" />
 
-    
+<!-- RESEARCH -->
+<section class="resume-section" id="research">
+    <div class="resume-section-content">
+        <h2 class="mb-4">Research</h2>
 
-
-
-        <!-- PUBLICATIONS -->
-        <section class="resume-section" id="publications">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Publications</h2>
-
-                <ul class="pub-list">
-
-                    <!-- PAPER 1 -->
-                    <li class="pub-item">
-                        <strong>1. Student/Faculty Partnerships to Teach Computing Ethics Beyond the Computer Science Classroom</strong><br>
-                        <a href="https://www.linkedin.com/in/emuchuwa/" target="_blank">Elshaddai Muchuwa*</a>, 
-                        <a href="https://www.fandm.edu/faculty/jason-wilson" target="_blank">Jason R. Wilson</a><br>
-                        Accepted to 
-                        <a href="https://sigcse2026.sigcse.org/details/sigcse-ts-2026-Papers/122/Student-Faculty-Partnerships-to-Teach-Computing-Ethics-Beyond-the-Computer-Science-Cl"
-                           target="_blank">SIGCSE Technical Symposium 2026</a>
-
-                        <div class="pub-resources">
-                            <a href="#" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="https://sigcse2026.sigcse.org/details/sigcse-ts-2026-Papers/122/Student-Faculty-Partnerships-to-Teach-Computing-Ethics-Beyond-the-Computer-Science-Cl" target="_blank">
-                                <i class="fas fa-link"></i> Conference
-                            </a>
-                        </div>
-                    </li>
-
-                    <br>
-
-                    <!-- PAPER 2 -->
-                    <li class="pub-item">
-                        <strong>2. Co-Creation and Inclusive Design: Developing a Machine Ethics Curriculum through Collaborative Pedagogy</strong><br>
-                        <a href="https://www.linkedin.com/in/emuchuwa/" target="_blank">Elshaddai Muchuwa*</a>, 
-                        <a href="https://www.fandm.edu/faculty/jason-wilson" target="_blank">Jason R. Wilson</a>, 
-                        <a href="https://www.fandm.edu/faculty/lee-franklin" target="_blank">Lee Franklin</a><br>
-                        Published in  
-                        <a href="https://sigcse2025.sigcse.org/details/sigcse-ts-2025-acm-student-research-competition/17/Co-Creation-and-Inclusive-Design-Developing-a-Machine-Ethics-Curriculum-through-Coll" 
-                           target="_blank">SIGCSE TS 2025, Volume 2</a>, p. 1757.
-
-                        <div class="pub-resources">
-                            <a href="#" target="_blank"><i class="fas fa-file-pdf"></i> PDF</a>
-                            <a href="https://sigcse2025.sigcse.org/details/sigcse-ts-2025-acm-student-research-competition/17/Co-Creation-and-Inclusive-Design-Developing-a-Machine-Ethics-Curriculum-through-Coll" 
-                               target="_blank"><i class="fas fa-link"></i> Conference</a>
-                        </div>
-                    </li>
-
-                </ul>
-
-                <p style="font-size: 0.9rem; color: #777; margin-top: 0.5rem;">
-                    * = main author
-                </p>
-
-            </div>
-        </section>
-        <hr class="m-0" />
-
-
-
-        <!-- PROJECTS -->
-        <section class="resume-section" id="projects">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Projects</h2>
-                <p>Coming soon.</p>
-            </div>
-        </section>
-        <hr class="m-0" />
-
-
-
-        <!-- NEWS -->
-        <section class="resume-section" id="news">
-            <div class="resume-section-content">
-                <h2 class="mb-5">In the News</h2>
-
-                <ul>
-                    <li><a href="https://www.fandm.edu/stories/rising-sophomore-teaches-yale-global-scholars.html" target="_blank">
-                        Rising Sophomore Teaches Yale Global Scholars</a></li>
-
-                    <li><a href="https://www.fandm.edu/stories/students-study-ai-ethics-and-implications.html" target="_blank">
-                        Students Study AI Ethics & Implications</a></li>
-
-                    <li><a href="https://www.instagram.com/p/DG4c7r2KmxB/" target="_blank">
-                        SIGCSE Presentation — Instagram Announcement</a></li>
-                </ul>
-
-            </div>
-        </section>
-        <hr class="m-0" />
-
-
-
-        <!-- AWARDS -->
-        <section class="resume-section" id="awards">
-            <div class="resume-section-content">
-                <h2 class="mb-5">Awards</h2>
-                <ul>
-                    <li>Yale Launchpad Scholar (2025)</li>
-                    <li>Anders Uhrskov Leadership Scholar (2024)</li>
-                    <li>Pi Sigma Alpha (2024)</li>
-                    <li>Hackman Research Fellow (2023–25)</li>
-                    <li>Harwood Leadership Fellow (2023)</li>
-                </ul>
-            </div>
-        </section>
-        <hr class="m-0" />
-
-
-
-    <!-- SERVICE -->
-    <section class="resume-section" id="service">
-      <div class="resume-section-content">
-        <h2 class="mb-5">Service</h2>
-    
         <p>
-          A lot of my service work began with a simple responsibility I felt growing up — if someone helped
-          me take the next step, I had to make sure someone else didn’t walk alone. That’s how I ended up
-          mentoring groups of students in Zimbabwe and Brooklyn, usually twenty or more each year. Some of
-          them are thinking about college for the first time, some are trying to write about who they are,
-          and most just need someone who treats their goals seriously. I try to give them what I needed at
-          their age: honest guidance and the sense that their lives can stretch wider than the limits around
-          them. That’s the Ubuntu part for me — possibility is something we build through one another.
+            My research examines how AI clusters, ranks, and interprets people, and how relational,
+            Ubuntu-informed approaches can reshape governance and design. I focus on algorithmic fairness,
+            harm modeling, contextual inference, HRI, and participatory ethics in computational systems.
         </p>
-    
-        <p>
-          I carry that same approach into my work on campus. A lot of younger students, especially Black
-          students and international students, end up navigating spaces where they feel unseen or unsure of
-          where to begin. I’ve made it a point to be someone they can check in with — about classes,
-          research, leadership roles, or just figuring out how to belong in a place that wasn’t built with
-          them in mind. These conversations aren’t formal mentorship; they feel more like passing on
-          something that was passed to me: room to grow without feeling alone.
-        </p>
-    
-        <p>
-          The workshops I run — storytelling, leadership, goal-setting — come from the same place. I’ve seen
-          how powerful it is when young people are given a space to name their ambitions out loud. Every
-          time someone realizes their story is worth taking seriously, you can feel something shift. Those
-          moments remind me why I keep doing this. Service isn’t a separate part of my work; it shapes the
-          way I think about research, community, and what responsibility looks like in practice.
-        </p>
-    
-      </div>
-    </section>
-    <hr class="m-0" />
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="scripts.js"></script>
+        <ul style="margin-top: 2rem;">
+            <li class="mb-3">
+                <strong>Undergraduate Honors Thesis — Composite Vulnerability Persona (CVP)</strong><br>
+                Modeling relational harm using PCA, mixed-effects regression, counterfactual analysis,
+                and stress-profile simulation within an Ubuntu-informed governance framework.
+            </li>
 
-    <!-- FontAwesome -->
-    <script src="https://kit.fontawesome.com/a2e00e65d9.js" crossorigin="anonymous"></script>
+            <li class="mb-3">
+                <strong>Machine Ethics Research — CARES Lab</strong><br>
+                Lead analyst for ACM paper; conducted PCA, mixed-effects modeling, and survey validation
+                across nine indicators of ethical reasoning.
+            </li>
+
+            <li class="mb-3">
+                <strong>Cognitive Neuroscience — VR & Memory</strong><br>
+                Designed immersive recall experiment; analyzed narrative responses using Azure sentiment
+                analysis and Python feature extraction.
+            </li>
+
+            <li class="mb-3">
+                <strong>Human–Robot Interaction (Misty)</strong><br>
+                Programmed affective robot behaviors in MistyPy; built sentiment dashboard (Flask + Supabase).
+            </li>
+
+            <li class="mb-3">
+                <strong>Social Psychology — AI & Admissions</strong><br>
+                Built experiment testing effects of AI-generated admissions recommendations on decisions
+                and reasoning patterns.
+            </li>
+        </ul>
+
+    </div>
+</section>
+<hr class="m-0" />
+
+<!-- PUBLICATIONS -->
+<section class="resume-section" id="publications">
+    <div class="resume-section-content">
+        <h2 class="mb-4">Publications</h2>
+
+        <ul class="pub-list">
+
+            <li class="pub-item">
+                <strong>1. Student/Faculty Partnerships to Teach Computing Ethics Beyond the Computer Science Classroom</strong><br>
+                Elshaddai Muchuwa*, Jason R. Wilson<br>
+                Accepted to SIGCSE Technical Symposium 2026
+                <div class="pub-resources">
+                    <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+                    <a href="#"><i class="fas fa-link"></i> Conference</a>
+                </div>
+            </li>
+
+            <br>
+
+            <li class="pub-item">
+                <strong>2. Co-Creation and Inclusive Design: Developing a Machine Ethics Curriculum through Collaborative Pedagogy</strong><br>
+                Elshaddai Muchuwa*, Jason R. Wilson, Lee Franklin<br>
+                SIGCSE TS 2025, Volume 2, p. 1757.
+                <div class="pub-resources">
+                    <a href="#"><i class="fas fa-file-pdf"></i> PDF</a>
+                    <a href="#"><i class="fas fa-link"></i> Conference</a>
+                </div>
+            </li>
+
+        </ul>
+
+        <p style="font-size: 0.9rem; color: #777;">* = main author</p>
+    </div>
+</section>
+<hr class="m-0" />
+
+<!-- PROJECTS -->
+<section class="resume-section" id="projects">
+    <div class="resume-section-content">
+        <h2 class="mb-4">Projects</h2>
+        <p>Coming soon.</p>
+    </div>
+</section>
+<hr class="m-0" />
+
+<!-- NEWS -->
+<section class="resume-section" id="news">
+    <div class="resume-section-content">
+        <h2 class="mb-4">In the News</h2>
+        <ul>
+            <li><a href="https://www.fandm.edu/stories/rising-sophomore-teaches-yale-global-scholars.html" target="_blank">Rising Sophomore Teaches Yale Global Scholars</a></li>
+            <li><a href="https://www.fandm.edu/stories/students-study-ai-ethics-and-implications.html" target="_blank">Students Study AI Ethics & Implications</a></li>
+            <li><a href="https://www.instagram.com/p/DG4c7r2KmxB/" target="_blank">SIGCSE Presentation — Instagram Announcement</a></li>
+        </ul>
+    </div>
+</section>
+<hr class="m-0" />
+
+<!-- AWARDS -->
+<section class="resume-section" id="awards">
+    <div class="resume-section-content">
+        <h2 class="mb-4">Awards</h2>
+        <ul>
+            <li>Yale Launchpad Scholar (2025)</li>
+            <li>Anders Uhrskov Leadership Scholar (2024)</li>
+            <li>Pi Sigma Alpha (2024)</li>
+            <li>Hackman Research Fellow (2023–25)</li>
+            <li>Harwood Leadership Fellow (2023)</li>
+        </ul>
+    </div>
+</section>
+<hr class="m-0" />
+
+<!-- SERVICE -->
+<section class="resume-section" id="service">
+    <div class="resume-section-content">
+        <h2 class="mb-4">Service</h2>
+
+        <p>
+            A lot of my service work began with a responsibility I felt growing up — if someone helped
+            me take the next step, I had to make sure someone else didn’t walk alone. That’s how I ended
+            up mentoring groups of students in Zimbabwe and Brooklyn, usually twenty or more each year.
+            Some are applying to college for the first time, some are trying to learn how to write about
+            who they are, and most just need someone who treats their goals as real. That’s the Ubuntu
+            part for me — possibility is something we build together.
+        </p>
+
+        <p>
+            On campus, I try to be a person younger students — especially Black students and
+            international students — can come to. Not formally, but in the small ways that matter:
+            talking through research ideas, course choices, leadership roles, or how to belong in a
+            space that wasn’t designed with them in mind.
+        </p>
+
+        <p>
+            The workshops I run — storytelling, leadership, goal-setting — come from the same place.
+            Once someone realizes their story is worth taking seriously, something changes. Those
+            moments remind me why service shapes everything else I do.
+        </p>
+    </div>
+</section>
+<hr class="m-0" />
+
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="scripts.js"></script>
+<script src="https://kit.fontawesome.com/a2e00e65d9.js" crossorigin="anonymous"></script>
+
 </body>
 </html>
