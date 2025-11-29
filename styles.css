@@ -10984,3 +10984,18 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* --- OVERRIDE Bootstrap Resume centering --- */
+section.resume-section {
+    display: block !important;
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+    min-height: auto !important;
+    align-items: flex-start !important;
+    justify-content: flex-start !important;
+}
+
+section.resume-section {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
