@@ -12,7 +12,20 @@
  */
 /* --- PROFILE IMAGE (safe override) --- */
 
-
+.role-line {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #6c6c6c; 
+    letter-spacing: 0.5px;
+    margin-top: 0.2rem;
+}
+.role-line a {
+    color: #bd5d38;
+    text-decoration: none;
+}
+.role-line a:hover {
+    text-decoration: underline;
+}
 /* Restore normal behavior for all other img-fluid elements */
 .img-fluid {
     max-width: 100% !important;
