@@ -32,6 +32,7 @@
     height: auto !important;
 }
 
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10994,5 +10995,26 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+.pub-item {
+  margin-bottom: 1.5rem;
+}
 
+.pub-resources {
+  margin-top: 0.4rem;
+}
+
+.pub-resources a {
+  margin-right: 1.2rem;
+  font-size: 0.95rem;
+  color: #bd5d38;
+  text-decoration: none;
+}
+
+.pub-resources a i {
+  margin-right: 0.35rem;
+}
+
+.pub-resources a:hover {
+  text-decoration: underline;
+}
 
