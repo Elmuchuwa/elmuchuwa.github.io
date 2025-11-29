@@ -1,81 +1,348 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elshaddai Muchuwa</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+  <title>Elshaddai Muchuwa</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="page">
 
-<div class="container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="sidebar-inner">
+        <img
+          src="assets/headshot.jpeg"
+          alt="Photo of Elshaddai Muchuwa"
+          class="sidebar-photo"
+        />
 
-    <!-- PHOTO -->
-    <img src="assets/headshot.jpeg" alt="Photo of Elshaddai Muchuwa" class="profile-photo" />
+        <h1 class="sidebar-name">Elshaddai Muchuwa</h1>
+        <p class="sidebar-tagline">
+          AI governance · algorithmic fairness · Ubuntu ethics
+        </p>
 
-    <!-- NAME -->
-    <h1 class="name">Elshaddai Muchuwa</h1>
+        <a
+          class="sidebar-button"
+          href="assets/cv.pdf"
+          target="_blank"
+          rel="noopener"
+        >
+          Download CV
+        </a>
 
-    <!-- CV DOWNLOAD BUTTON -->
-    <a class="cv-button" href="cv.pdf" target="_blank">Download CV</a>
+        <nav class="sidebar-nav">
+          <a href="#about" class="nav-link active">About</a>
+          <a href="#research" class="nav-link">Research</a>
+          <a href="#publications" class="nav-link">Publications</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#news" class="nav-link">News</a>
+          <a href="#awards" class="nav-link">Awards</a>
+          <a href="#service" class="nav-link">Service</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
 
-    <!-- SHORT INTRO -->
-    <p class="intro">
-        I study how technical systems encode meaning, misrepresent people, and distribute harm.
-        My work sits at the intersection of AI governance, algorithmic fairness, contextual modeling,
-        and Ubuntu-informed approaches to accountability and design.
-    </p>
+        <div class="sidebar-social">
+          <!-- GitHub -->
+          <a
+            href="https://github.com/Elmuchuwa"
+            target="_blank"
+            rel="noopener"
+            aria-label="GitHub"
+          >
+            <svg viewBox="0 0 24 24" class="icon">
+              <path
+                d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.94c.58.11.79-.25.79-.56
+                   0-.28-.01-1.02-.02-2-3.2.7-3.88-1.54-3.88-1.54-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71
+                   1.17.08 1.79 1.2 1.79 1.2 1.04 1.77 2.74 1.26 3.41.96.11-.76.41-1.26.74-1.55-2.56-.29-5.26-1.28-5.26-5.71
+                   0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a10.9 10.9 0 0 1 2.9-.39
+                   10.9 10.9 0 0 1 2.9.39c2.21-1.49 3.18-1.18 3.18-1.18.63 1.59.23 2.77.11 3.06.74.81 1.19 1.84 1.19 3.1
+                   0 4.44-2.71 5.42-5.29 5.71.42.36.8 1.09.8 2.21 0 1.59-.01 2.87-.01 3.26 0 .31.21.68.8.56A11.5 11.5 0 0 0 23.5 12
+                   C23.5 5.65 18.35.5 12 .5Z"
+              />
+            </svg>
+          </a>
 
-    <!-- RESEARCH INTERESTS -->
-    <h2>Research Interests</h2>
-    <p>
-        Algorithmic fairness; contextual and relational modeling; AI governance and accountability;
-        decolonial approaches to machine ethics; participatory and cross-cultural HRI design;
-        voice-based perception and trust; legal and institutional design for high-stakes automation.
-    </p>
+          <!-- LinkedIn (replace URL with yours) -->
+          <a
+            href="https://www.linkedin.com"
+            target="_blank"
+            rel="noopener"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" class="icon">
+              <path
+                d="M4.98 3.5C4.98 4.88 3.86 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 5 2.12 5 3.5zM.3 8.18h4.4V24H.3zM8.55 8.18h4.22v2.14h.06
+                   c.59-1.12 2.03-2.3 4.18-2.3 4.47 0 5.29 2.94 5.29 6.76V24h-4.4v-7.4c0-1.77-.03-4.03-2.46-4.03-2.46 0-2.84 1.92-2.84 3.9V24H8.55z"
+              />
+            </svg>
+          </a>
 
-    <!-- CURRENT WORK -->
-    <h2>Current Work</h2>
-    <ul>
-        <li>
-            <strong>Composite Vulnerability Persona (CVP)</strong> — a context-sensitive audit and
-            governance framework evaluating how AI systems behave across intersecting vulnerabilities
-            using relational, participatory and quantitative modeling.
-        </li>
-        <li>
-            <strong>Machine Ethics Curriculum</strong> — co-designed interdisciplinary ethics modules
-            implemented across F&M College and published at the ACM Technical Symposium on Computer Science Education.
-        </li>
-        <li>
-            <strong>Virtual Reality & Memory</strong> — experimental study on immersive environments
-            and memory recall, integrating Azure ML sentiment and behavioral pattern analysis.
-        </li>
-        <li>
-            <strong>Social Robotics & Perception</strong> — interactive Misty II robot experiments
-            examining affect, trust, and interaction cues through Python-based event detection,
-            pose control, and a custom Flask-Supabase sentiment dashboard.
-        </li>
-    </ul>
+          <!-- Email (replace with your address) -->
+          <a
+            href="mailto:youremail@example.com"
+            aria-label="Email"
+          >
+            <svg viewBox="0 0 24 24" class="icon">
+              <path
+                d="M3 4h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.01L12 13l9-6.99V6H3zm0 12h18V9l-9 7L3 9v9z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </aside>
 
-    <!-- PROJECTS -->
-    <h2>Selected Projects</h2>
-    <ul>
-        <li><strong>Hospital Navigation Agent (Python)</strong>: Search-based autonomous agent implementing A*, BFS, admissible heuristics & state-space modeling.</li>
-        <li><strong>AI in Admissions Study</strong>: Designed between-subjects experiment on susceptibility to AI-generated suitability scores; ran regression and inference tests.</li>
-        <li><strong>Sentiment Modeling for VR Study</strong>: Applied Azure Python SDK, text analytics, emotional scoring & affective trajectory tracking.</li>
-        <li><strong>CARES Lab Research</strong>: PCA, mixed-effects models, variance decomposition and multi-survey evaluation of ethical reasoning indicators across modules.</li>
-    </ul>
+    <!-- MAIN CONTENT -->
+    <main class="content">
 
-    <!-- CONTACT -->
-    <h2>Contact</h2>
-    <p>
-        <strong>Email:</strong> elmuchuw@fandm.edu<br/>
-        <strong>GitHub:</strong> <a href="https://github.com/elmuchuwa" target="_blank">github.com/elmuchuwa</a><br/>
-        <strong>LinkedIn:</strong> <a href="#" target="_blank">(add your link here)</a>
-    </p>
+      <!-- ABOUT -->
+      <section id="about" class="section">
+        <h2>About</h2>
+        <p>
+          I study how technical systems encode meaning, misrepresent people, and
+          distribute harm. My work brings together AI governance, algorithmic
+          fairness, and an Afrocentric relational ethic grounded in Ubuntu.
+        </p>
+        <p>
+          I think about AI through three commitments: centering communities who
+          have been treated as expendable data points, treating context and
+          structure as part of the technical problem rather than an afterthought,
+          and building spaces where people co-create the knowledge that steers
+          the systems around them.
+        </p>
+        <p>
+          Right now that shows up through work on the Composite Vulnerability
+          Persona (CVP), an Ubuntu-informed audit framework for AI systems; an
+          interdisciplinary Machine Ethics course that treats students as
+          co-authors of ethics curricula; and projects in virtual reality and
+          human–robot interaction that examine how people experience memory,
+          trust, and voice when machines enter the loop.
+        </p>
+      </section>
 
-</div>
+      <!-- RESEARCH -->
+      <section id="research" class="section">
+        <h2>Research Interests</h2>
+        <p>
+          I am interested in the representational and inferential assumptions
+          that govern how AI clusters, ranks, and assesses people, and in
+          mitigating their impact on marginalized communities through relational
+          and participatory design.
+        </p>
+        <ul>
+          <li>Algorithmic fairness in public and private institutions</li>
+          <li>Contextual and relational modeling for high-stakes automation</li>
+          <li>AI governance, regulation, and institutional accountability</li>
+          <li>Decolonial and Afrocentric approaches to machine ethics</li>
+          <li>
+            Voice, affect, and trust in human–robot interaction and AI-mediated
+            communication
+          </li>
+          <li>
+            Participatory design for AI and HRI; student-led ethics curricula
+          </li>
+        </ul>
+      </section>
 
+      <!-- PUBLICATIONS -->
+      <section id="publications" class="section">
+        <h2>Publications & Writing</h2>
+        <p>
+          A selective list. For an updated list, see my CV.
+        </p>
+        <ul class="pub-list">
+          <li>
+            <strong>Teaching and Learning Machine Ethics.</strong>
+            ACM Technical Symposium on Computer Science Education (SIGCSE),
+            2026. (Second author; lead on quantitative analysis and course
+            design.)
+          </li>
+          <li>
+            <strong>Beyond the Brain: Towards a More Expansive Approach to
+            Mental Health.</strong>
+            Philosophy & Neuroscience final paper, 2025. Explores the limits of
+            strict naturalism in psychiatry and argues for an expansive
+            naturalist framework that includes ethical and social dimensions of
+            illness.
+          </li>
+          <li>
+            <strong>Operationalizing Ubuntu Ethics for AI Governance.</strong>
+            Undergraduate honors thesis in progress. Develops the Composite
+            Vulnerability Persona (CVP) as a stress-testing framework for AI
+            systems across intersecting vulnerabilities.
+          </li>
+        </ul>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="section">
+        <h2>Selected Projects</h2>
+
+        <h3>Composite Vulnerability Persona (CVP)</h3>
+        <p>
+          An Ubuntu-informed design audit and governance framework that
+          stress-tests AI systems across intersecting axes such as race, gender,
+          class, immigration status, geography, disability, and digital access.
+          The CVP combines participatory risk mapping with quantitative
+          modeling to estimate relational harm for different personas.
+        </p>
+
+        <h3>Teaching & Learning Machine Ethics</h3>
+        <p>
+          Co-created an interdisciplinary Machine Ethics course with 21 students
+          and seven faculty across non-CS departments. The course integrates
+          Ubuntu, Afro-feminism, and Confucian ethics with technical topics in
+          AI. As lead analyst, I built PCA pipelines and mixed-effects models in
+          R to study how students’ ethical reasoning shifted across modules.
+        </p>
+
+        <h3>VR, Memory, and Sentiment</h3>
+        <p>
+          Designed a VR study on how immersive environments shape memory and
+          emotional framing. Used Python and Azure’s sentiment tools to analyze
+          narrative recall, linking affective tone to memory detail and
+          perspective.
+        </p>
+
+        <h3>Misty Robot: Touch, Voice, and Trust</h3>
+        <p>
+          Built interactive behaviors for the Misty robot to study how touch,
+          posture, and voice shape user affect during campus visits. Implemented
+          touch events, poses, LED states, and logging in Python with the
+          MistyPy SDK, and prototyped a sentiment dashboard with JavaScript and
+          Flask.
+        </p>
+
+        <h3>Search-Based Hospital Agents</h3>
+        <p>
+          Implemented search-based autonomous agents in Python for a simulated
+          hospital environment (DIS). Formalized navigation tasks, designed
+          admissible heuristics, and evaluated agent performance across
+          transport and delivery scenarios.
+        </p>
+      </section>
+
+      <!-- NEWS -->
+      <section id="news" class="section">
+        <h2>Recent News</h2>
+        <ul>
+          <li>
+            <strong>2025</strong> — Launching the Composite Vulnerability Persona
+            (CVP) honors thesis on Ubuntu-informed AI governance.
+          </li>
+          <li>
+            <strong>2025</strong> — Co-author, “Teaching and Learning Machine
+            Ethics,” accepted for SIGCSE 2026.
+          </li>
+          <li>
+            <strong>2024</strong> — Co-led the first Machine Ethics course at
+            Franklin &amp; Marshall College; seven interdisciplinary modules
+            will reach 300+ students by 2028.
+          </li>
+        </ul>
+      </section>
+
+      <!-- AWARDS -->
+      <section id="awards" class="section">
+        <h2>Awards & Fellowships</h2>
+        <ul>
+          <li>Yale Launchpad Scholar, 2025</li>
+          <li>Anders Uhrskov Leadership Scholarship, Copenhagen, 2024</li>
+          <li>Hackman Research Fellowship, 2023–2025</li>
+          <li>Harwood Leadership Fellowship, 2023</li>
+          <li>Pi Sigma Alpha (Political Science Honor Society), 2024</li>
+        </ul>
+      </section>
+
+      <!-- SERVICE -->
+      <section id="service" class="section">
+        <h2>Service & Community</h2>
+        <ul>
+          <li>
+            Senior advisor and former president, Black Student Union (F&amp;M).
+          </li>
+          <li>
+            Co-designer and co-instructor, interdisciplinary Machine Ethics
+            course and faculty workshop series.
+          </li>
+          <li>
+            Mentor for students in Zimbabwe and the U.S. navigating college,
+            STEM pathways, and AI ethics.
+          </li>
+        </ul>
+      </section>
+
+      <!-- CONTACT -->
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>
+          The best way to reach me is by email. I am always open to
+          conversations about AI governance, Ubuntu ethics, collaborative
+          research, and work that links law, computation, and community.
+        </p>
+        <p>
+          <strong>Email:</strong>
+          <a href="mailto:youremail@example.com">youremail@example.com</a>
+        </p>
+        <p>
+          <strong>GitHub:</strong>
+          <a href="https://github.com/Elmuchuwa" target="_blank" rel="noopener">
+            github.com/Elmuchuwa
+          </a>
+        </p>
+        <p>
+          <strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener">
+            LinkedIn profile
+          </a>
+        </p>
+      </section>
+
+    </main>
+  </div>
+
+  <!-- SMALL SCRIPT FOR SMOOTH SCROLL + ACTIVE SECTION -->
+  <script>
+    // Smooth scrolling
+    document.querySelectorAll('.nav-link[href^="#"]').forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (!target) return;
+        window.scrollTo({
+          top: target.offsetTop - 20,
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Highlight active section in sidebar
+    const sections = document.querySelectorAll('.section');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              link.classList.toggle(
+                'active',
+                link.getAttribute('href') === '#' + id
+              );
+            });
+          }
+        });
+      },
+      { rootMargin: '-50% 0px -40% 0px', threshold: 0.1 }
+    );
+
+    sections.forEach(section => observer.observe(section));
+  </script>
 </body>
 </html>
