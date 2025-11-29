@@ -1,70 +1,215 @@
+/* Base */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
-    font-family: "Georgia", serif;
-    background: #ffffff;
-    color: #111;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Georgia", serif;
+  background: #faf7f3;
+  color: #111111;
 }
 
-.container {
-    max-width: 760px;
-    margin: 0 auto;
-    padding: 50px 20px;
-    text-align: center;
+/* Layout */
+
+.page {
+  display: flex;
+  min-height: 100vh;
 }
 
-.profile-photo {
-    width: 180px;
-    height: auto;       /* keep full image */
-    border-radius: 8px; /* optional: soften corners */
-    object-fit: contain;
-    display: block;
-    margin: 0 auto 24px auto; 
+/* Sidebar */
+
+.sidebar {
+  width: 260px;
+  background: #262626;
+  color: #f9f5f1;
+  padding: 32px 24px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  overflow-y: auto;
 }
 
-.name {
-    font-size: 2.4rem;
-    margin-bottom: 8px;
+.sidebar-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
 }
 
-.cv-button {
-    display: inline-block;
-    margin-top: 6px;
-    margin-bottom: 28px;
-    padding: 10px 18px;
-    font-size: 1rem;
-    text-decoration: none;
-    background: #111;
-    color: #fff;
-    border-radius: 6px;
-    transition: 0.2s ease-in-out;
+.sidebar-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #f9f5f1;
 }
 
-.cv-button:hover {
-    background: #333;
+.sidebar-name {
+  font-size: 1.9rem;
+  margin: 0;
+  text-align: center;
 }
 
-h2 {
-    margin-top: 40px;
-    margin-bottom: 10px;
-    font-size: 1.6rem;
+.sidebar-tagline {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0;
+  opacity: 0.9;
 }
 
-p, ul {
-    font-size: 1.08rem;
-    line-height: 1.6;
+.sidebar-button {
+  margin-top: 6px;
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: #f9f5f1;
+  color: #262626;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.sidebar-button:hover {
+  background: #e5ddcf;
+}
+
+/* Nav */
+
+.sidebar-nav {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #f9f5f1;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border-radius: 999px;
+  display: block;
+}
+
+.nav-link:hover {
+  background: rgba(249, 245, 241, 0.14);
+}
+
+.nav-link.active {
+  background: #f9f5f1;
+  color: #262626;
+}
+
+/* Social icons */
+
+.sidebar-social {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  fill: #f9f5f1;
+}
+
+.sidebar-social a:hover .icon {
+  fill: #e5ddcf;
+}
+
+/* Main content */
+
+.content {
+  margin-left: 260px;
+  padding: 40px 56px 60px;
+  max-width: 920px;
+  width: 100%;
+}
+
+.section {
+  margin-bottom: 56px;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.section h3 {
+  font-size: 1.2rem;
+  margin-top: 24px;
+  margin-bottom: 4px;
+}
+
+.section p {
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.section ul {
+  padding-left: 20px;
+}
+
+.section li {
+  line-height: 1.5;
+  margin-bottom: 4px;
+}
+
+/* Publications */
+
+.pub-list {
+  list-style-type: disc;
+}
+
+/* Responsive layout */
+
+@media (max-width: 900px) {
+  .page {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    position: static;
+    width: 100%;
+    padding: 20px 16px 16px;
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 24px 18px 40px;
+  }
+
+  .sidebar-inner {
+    align-items: flex-start;
+  }
+
+  .sidebar-name,
+  .sidebar-tagline {
     text-align: left;
-}
+  }
 
-ul {
-    padding-left: 20px;
-}
+  .sidebar-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
 
-a {
-    color: #0050c8;
-    text-decoration: none;
-}
+  .nav-link {
+    font-size: 0.85rem;
+    padding: 4px 10px;
+  }
 
-a:hover {
-    text-decoration: underline;
+  .sidebar-photo {
+    width: 120px;
+    height: 120px;
+  }
 }
