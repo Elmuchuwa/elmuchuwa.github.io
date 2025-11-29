@@ -11017,4 +11017,8 @@ section.resume-section .resume-section-content {
 .pub-resources a:hover {
   text-decoration: underline;
 }
-
+/* Reduce top & bottom spacing between sections */
+section.resume-section {
+    padding-top: 2rem !important;
+    padding-bottom: 2rem !important;
+}
