@@ -10914,8 +10914,10 @@ p.lead {
     padding: 0.5rem;
   }
   #sideNav .navbar-brand .img-profile {
-    max-width: 10rem;
-    max-height: 10rem;
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 50%;
     border: 0.5rem solid rgba(255, 255, 255, 0.2);
   }
   #sideNav .navbar-collapse {
