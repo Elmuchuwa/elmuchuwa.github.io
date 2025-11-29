@@ -14,12 +14,11 @@ body {
 }
 
 .profile-photo {
-    width: 210px;
-    height: 210px;
-    border-radius: 50%;
-    object-fit: cover;
+    width: 180px;
+    height: auto;       /* keep full image */
+    border-radius: 8px; /* optional: soften corners */
+    object-fit: contain;
     display: block;
-    margin: 0 auto 20px auto;
 }
 
 .name {
