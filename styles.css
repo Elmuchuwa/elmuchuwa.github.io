@@ -10960,7 +10960,7 @@ p.lead {
 
 section.resume-section {
   display: flex;
-  align-items: center;
+  align-items: top;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 5rem;
@@ -10985,17 +10985,4 @@ section.resume-section .resume-section-content {
   }
 }
 
-/* --- OVERRIDE Bootstrap Resume centering --- */
-section.resume-section {
-    display: block !important;
-    padding-top: 2rem !important;
-    padding-bottom: 2rem !important;
-    min-height: auto !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-}
 
-section.resume-section {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
-}
