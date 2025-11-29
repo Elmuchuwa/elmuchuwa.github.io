@@ -10,18 +10,19 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-.img-profile {
-  width: 220px !important;
-  height: 220px !important;
-  object-fit: cover !important;
-  border-radius: 50% !important;
-  display: block !important;
+/* --- PROFILE IMAGE (safe override) --- */
+#sideNav .img-profile {
+    width: 220px !important;
+    height: 220px !important;
+    object-fit: cover !important;
+    border-radius: 50% !important;
+    display: block !important;
 }
 
+/* Restore normal behavior for all other img-fluid elements */
 .img-fluid {
-  height: 220px !important;
-  width: 220px !important;
-  max-width: none !important;
+    max-width: 100% !important;
+    height: auto !important;
 }
 
 :root {
